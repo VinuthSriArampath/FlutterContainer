@@ -19,7 +19,15 @@ class MyApp extends StatelessWidget {
             height: 200,
             margin: const EdgeInsets.all(30),
             // padding: const EdgeInsets.all(10),
-            color: Colors.blue,
+            // color: Colors.blue, cannot use with decoration
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: Colors.blue,
+              border: Border.all(
+                color: Colors.deepOrange,
+                width: 3
+              )
+            ),
             child: const Center(
                 child:  Text("Flutter")
             ),
